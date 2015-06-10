@@ -1,0 +1,47 @@
+% CMITS - Configuration Management for Information Technology Systems
+% Based on <https://github.com/afseo/cmits>.
+% Copyright 2015 Jared Jennings <mailto:jjennings@fastmail.fm>.
+%
+% Licensed under the Apache License, Version 2.0 (the "License");
+% you may not use this file except in compliance with the License.
+% You may obtain a copy of the License at
+%
+%    http://www.apache.org/licenses/LICENSE-2.0
+%
+% Unless required by applicable law or agreed to in writing, software
+% distributed under the License is distributed on an "AS IS" BASIS,
+% WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+% See the License for the specific language governing permissions and
+% limitations under the License.
+
+\chapter{RHEL 6 STIG Compliance}
+\label{RHEL6STIGCompliance}
+
+This chapter has to do with the compliance of Linux machines controlled by
+this policy, and administrators performing the procedures written here,
+with the Red Hat Enterprise Linux 6 STIG \cite{rhel6-stig}.
+
+In the compliance index of this document you can find a section for the RHEL 6 STIG.
+All requirements directly and completely implemented by automated
+application of this policy are listed in that index as ``implemented.''
+In places where the SRG imposes
+policy demands on the actions of administrators, those demands are passed
+on in \S\ref{Procedures}. All other requirements are discussed in another
+section below.
+
+Where RHEL defaults to the correct behavior, but it is simple to write
+automated policy that will fix anything that is broken, we do that, in an
+attempt to ensure that RHEL 6 hosts are not only compliant at rollout, but
+remain compliant over time, and to ensure that noncompliance is rare
+enough to draw attention where it is warranted.
+
+
+
+
+
+
+\section{Requirements that RHEL implements by default}
+
+\input{org_rhel6_na}
+\input{org_rhel6_unmet}
+\input{org_rhel6_documented_with_iao}
